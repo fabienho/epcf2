@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recherche de repas</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/menu.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="pic/logo.png" alt="Logo de votre restaurant">
+        </div>
+        <div id="topnav" class="topnav">
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+            <a class="topnav_link" href="#">A propos</a>
+            <a class="topnav_link" href="#">Menu</a>
+            <a class="topnav_link" href="#">News</a>
+            <a class="topnav_link" href="#">Contact</a>
+        </nav>
+        <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="header_bottom">
+        <div class="blo_header">
+          <h1>OT<br>Restaurant</h1>
+          <p>Tous les jours de 11h à 23h</p>
+          
+        </div>
+        <img src="pic/image1.png" alt="plat_header">
+    </div>
+    <h2>Recherche de repas</h2>
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Rechercher un repas...">
+        <select id="categorySelect">
+            <option value="">Toutes les catégories</option>
+        </select>
+        <input type="range" id="resultRange" min="1" max="20" step="1">
+        <span id="resultCount">1</span> résultats
+        <button id="sortButton">Croissant</button>
+        <button id="filterButton">Filtrer</button>
+    </div>
+    <div id="mealList"></div>
+    <footer>
+        <div class="log_footer">
+            <img src="pic/logo.png" alt="Logo de votre restaurant">
+        </div>
+        <nav class="menu_footer">
+            <ul>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Evenements</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="res_sociaux">
+            <img src="pic/social.png" alt="">
+        </div>
+        <div class="cop">2023 HOARAU Fabien.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
